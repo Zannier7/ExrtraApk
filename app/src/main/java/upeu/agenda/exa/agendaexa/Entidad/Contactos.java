@@ -1,37 +1,37 @@
 package upeu.agenda.exa.agendaexa.Entidad;
 
 public class Contactos {
-    private int idcontact;
-    private int number;
+    private Integer idcontact;
+    private String number;
     private String name;
 
     public Contactos() {
     }
 
-    public Contactos(int idcontact, int number, String name) {
+    public Contactos(Integer idcontact, String number, String name) {
         this.idcontact = idcontact;
         this.number = number;
         this.name = name;
     }
 
-    public Contactos(int number, String name) {
+    public Contactos(String number, String name) {
         this.number = number;
         this.name = name;
     }
 
-    public int getIdcontact() {
+    public Integer getIdcontact() {
         return idcontact;
     }
 
-    public void setIdcontact(int idcontact) {
+    public void setIdcontact(Integer idcontact) {
         this.idcontact = idcontact;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

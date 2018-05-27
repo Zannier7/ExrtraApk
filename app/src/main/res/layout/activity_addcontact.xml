@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.addContactView"
+    android:background="@color/colorPrimary"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_gravity="center_vertical"
+    android:paddingTop="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp" >
+
+
+            <TextView
+                android:id="@+id/popup_correo"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:textStyle = "bold"
+                android:text = "AÑADIR CONTACTO"
+                android:textColor = "@color/white"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout >
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutcorreo"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/correo"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView_userIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#2f2f4f"
+                android:padding="8dp"
+                android:src="@drawable/pro_profile"
+                android:tint="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView_userIcon"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView_userIcon"
+                android:background="@color/white"
+                android:inputType="text"
+                android:hint="Nombre"
+                android:paddingLeft="20dp"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeapellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="120dp">
+
+            <ImageView
+                android:id="@+id/imageView_apellido"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#2f2f4f"
+                android:padding="8dp"
+                android:src="@drawable/pro_phone"
+                android:tint="@color/white" />
+
+            <EditText
+                android:id="@+id/numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView_apellido"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView_apellido"
+                android:background="@color/white"
+                android:hint="Número de celular"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:maxLength="9"/>
+
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/saves"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text = "Guardar"
+            android:layout_marginTop = "180dp"
+            android:layout_gravity = "center_horizontal"
+            android:backgroundTint="#2f2f4f"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
